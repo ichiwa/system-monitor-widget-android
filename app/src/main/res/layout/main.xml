@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape1"
+        >
+
+    <TextView
+            android:id="@+id/textAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="2px"
+            android:layout_gravity="center_horizontal"/>
+
+    <!-- CPU行 -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU "
+                android:textColor="#FFFFFF"
+                android:id="@+id/textCpuLabel"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"/>
+        <TextView android:text="0"
+                android:id="@+id/textCpuValue"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"/>
+    </LinearLayout>
+    <ProgressBar
+            android:id="@+id/progressCpu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:progressDrawable="@drawable/progress1"
+            />
+
+    <!-- メモリー行 -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory "
+            android:textColor="#FFFFFF"
+            android:id="@+id/textMemoryLabel"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="5px"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView android:text="0"
+                android:id="@+id/textMemoryValue"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5px"/>
+    </LinearLayout>
+    <ProgressBar
+            android:id="@+id/progressMemory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:progressDrawable="@drawable/progress1"
+            />
+    <!-- NETWORK -->
+    <TextView
+            android:text="Networks"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textNetworkLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:layout_marginTop="10px">
+    </TextView>
+
+    <!-- NETWORK UP行 -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload "
+                android:textColor="#FFFFFF"
+                android:id="@+id/textNetworkUpLabel"
+                android:layout_marginLeft="5px"/>
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:text="0"
+                android:id="@+id/textNetworkUpValue"
+                android:layout_marginRight="5px"/>
+    </LinearLayout>
+
+    <!-- NETWORK DOWN行 -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download "
+                android:textColor="#FFFFFF"
+                android:id="@+id/textNetworkDownLabel"
+                android:layout_marginLeft="5px"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/textNetworkDownValue"
+                android:layout_marginRight="5px"/>
+    </LinearLayout>
+</LinearLayout>
